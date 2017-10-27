@@ -1,4 +1,4 @@
-##仅用于学习
+##only for study
 
 git init
 git add README.md
