@@ -1,0 +1,27 @@
+.search{
+  line-height: 100rpx;
+  width: 100%;
+  height: 120rpx;
+  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background:#22c3fd;
+  z-index: 9999;
+}
+.search input{
+  width: 94%;
+  background: #ffffff;
+  height: 100rpx;
+  margin-top: 10xp;
+  margin-left: 3%;
+  text-align: center;
+  line-height: 100rpx;
+
+}
+.search i{
+  position: absolute;
+  left:27%;
+  font-size: 40rpx;
+  z-index: 999;
+}

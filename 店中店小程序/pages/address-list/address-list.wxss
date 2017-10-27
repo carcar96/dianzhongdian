@@ -1,0 +1,58 @@
+/* pages/address-list/address-list.wxss */
+.address_icon{
+  width: 10%;
+  float: left
+}
+.address_info{
+  width: 75%;
+  float: left
+}
+page{
+  background: #eeeeee;
+}
+.address_r_icon{
+  width: 15%;
+  float: left;
+  border:2.34rpx solid #eeeeee;
+  text-align: center;
+  line-height: 90rpx;
+  height: 90rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+}
+.address_li{
+  width: 94%;
+  float: left;
+  padding:3%;
+  background: #ffffff;
+  border-bottom: 2.34rpx solid #eeeeee
+  
+}
+.address_icon i{
+  font-size: 50rpx;
+  color: #0098e8
+}
+.address_title{
+  font-size: 35rpx;
+  margin-bottom: 11.7rpx;
+}
+.address_text{
+  color: #666666;
+}
+.address_text text:nth-child(2){
+  margin-left: 23.4px;
+}
+.address_r_icon i{
+  font-size: 60rpx;
+}
+.add_btn{
+  width: 94%;
+  float: left;
+  margin-left: 3%;
+  background: #21bffd;
+  color: #ffffff;
+  border:none;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-top:200rpx;
+}

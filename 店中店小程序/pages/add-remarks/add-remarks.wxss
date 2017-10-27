@@ -1,0 +1,94 @@
+.evaluate{
+  width: 94%;
+  padding:3%;
+  float: left;
+  background: #ffffff;
+  position: relative;
+}
+.evaluate text{
+  width:4.68rpx;
+  height:46.8rpx;
+  background: #0098e8;
+  display: inline-block;
+  position: absolute;
+  left: 3%;
+  top: 17rpx;
+}
+.evaluate textarea{
+  padding-left: 3%;
+  width: 97%;
+  height: 200rpx;
+}
+page{
+  background: #eeeeee;
+}
+.photo{
+
+  line-height: 100rpx;
+  width: 100%;
+  float: left;
+  border-top: 2.34rpx solid #eeeeee;
+}
+.photo view{
+    margin-top: 3%;
+  width: 15%;
+  float: left;
+  border-right: 2.34rpx solid #eeeeee;
+}
+.photo i{
+  font-size: 60rpx;
+  color: #999999;
+}
+.photo image{
+  float: left;
+  width: 20%;
+  margin-top: 11.7rpx;
+  margin-left: 11.7rpx;
+  height: 117rpx;
+}
+.service{
+  width: 94%;
+  float: left;
+  padding: 0 3%;
+  background: #ffffff;
+  margin-top: 20rpx;
+}
+.service_li{
+  width: 100%;
+  float: left;
+  padding: 30rpx 0;
+  border-bottom: 2.34rpx solid #eeeeee;
+}
+.service_li_left{
+  width: 20%;
+  float: left
+}
+.service_li_right{
+  width: 80%;
+  text-align: right;
+  float: left
+}
+.icon_active{
+  color: #15a2f9!important;
+}
+.service_li_right view{
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+
+.service_li_right view i{
+  font-size: 45rpx;
+}
+
+.add_btn{
+  width: 94%;
+  float: left;
+  margin-left: 3%;
+  background: #21bffd;
+  color: #ffffff;
+  border:none;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-top:200rpx;
+}

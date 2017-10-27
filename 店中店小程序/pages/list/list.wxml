@@ -1,0 +1,44 @@
+<!--轮播  -->
+<swiper indicator-dots="{{indicatorDots}}"  
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+      <block wx:for="{{imgUrls}}">  
+        <swiper-item>  
+           <navigator url="{{item.link}}" hover-class="navigator-hover">  
+            <image src="{{item.url}}" class="slide-image" width="355" height="150"/>  
+           </navigator>   
+        </swiper-item>  
+      </block>  
+</swiper>  
+<!--轮播  -->
+<view class="line"></view>
+<view class="location"><i class="icon iconfont icon-zhizhen"></i>广州市...</view>
+
+<!--门店列表  -->
+<view class="item_title">
+ <view class="item_info">
+ <text class="item_line_l pub_line"></text>
+ <text>门店列表</text>
+ <text class="item_line_r pub_line"></text>
+ </view>
+</view>
+<view class="item_list">
+   <view class="section section_gap item_li" wx:for="{{list}}" wx:for-item="item">
+   <navigator url="/pages/shop-details/shop-details" hover-class="navigator-hover"> 
+   <view class="item_li_img">
+     <image src="{{item.url}}"></image>
+   </view>
+   <view class="item_li_name">
+    <view class="item_li_title">{{item.title}}</view>
+    <view class="item_text">{{item.cost}}</view>
+     <view><text class="index_bg">{{item.index}}</text><text class="discount">{{item.discount}}</text></view>
+   </view>
+   <view class="item_li_distance">
+      <view class="item_d_d">
+       {{item.business}}
+      </view>
+      <view class="item_d_j">{{item.rice}}</view>
+   </view>
+    </navigator>
+  </view>
+</view>
+<!--门店列表  -->

@@ -1,0 +1,166 @@
+
+<!--tab  -->
+<view class="tab_box">
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部</view>  
+    <view class="swiper-tab-list {{currentTab==1? 'on' : ''}}" data-current="1" bindtap="swichNav">待付款</view> 
+     <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">待发货</view>  
+    <view class="swiper-tab-list {{currentTab==3? 'on' : ''}}" data-current="3" bindtap="swichNav">待消费</view> 
+     <view class="swiper-tab-list {{currentTab==4? 'on' : ''}}" data-current="4" bindtap="swichNav">待收货</view>  
+</view> 
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
+    <swiper-item>
+   <view class="order-img">
+       <!-- <image class="swiper_img" src="../../img/order-bg.jpg"></image> -->
+      </view>
+       <view class="section section_gap order_li" wx:for="{{all}}" wx:for-item="item">
+       <navigator url="/pages/item-details/item-details">
+         <view class="odd_num">
+           <text>单号：{{item.num}}</text>
+           <text>{{item.time}}</text>
+         </view>
+         <view class="order_item">
+           <view class="order_img">
+             <image src="{{item.url}}"></image>
+           </view>
+           <view class="order_title">
+             <view class="order_name">{{item.title}}</view>
+             <view class="order_text"><text>{{item.text}}</text><text>{{item.distance}}</text></view>
+             <view class="order_price"><text>￥:{{item.price}}</text><text>￥:{{item.del}}<text class="text_line"></text></text></view>
+           </view>
+           <view class="order_mun">X{{item.num_b}}</view>
+         </view>
+         </navigator>
+         <view class="order_botton">
+         <navigator url="/pages/shop-details/shop-details"><text class="current">再次购买</text></navigator>  <navigator url="/pages/evaluate/evaluate"><text>评价</text></navigator> 
+         </view>
+         <view class="mode">
+          <text>配送方式：{{item.mode}}</text>,<text>单号：{{item.numbers}}</text>
+         </view>
+         <view class="section section_gap notice" wx:for="{{notice}}" wx:for-item="item">
+         <view> <i class="icon iconfont icon-broadcast icon1"></i>{{item.title}}</view>
+         <view>{{item.time}}<i class="icon iconfont icon-jiaji-copy icon2"></i></view>
+         </view>
+       </view> 
+    </swiper-item> 
+    <swiper-item>  
+      <view class="order-img">
+       <!-- <image class="swiper_img" src="../../img/order-bg.jpg"></image> -->
+      </view>
+       <view class="section section_gap order_li" wx:for="{{order}}" wx:for-item="item">
+       <navigator url="/pages/item-details/item-details">
+         <view class="odd_num">
+           <text>单号：{{item.num}}</text>
+           <text>{{item.time}}</text>
+         </view>
+         <view class="order_item">
+           <view class="order_img">
+             <image src="{{item.url}}"></image>
+           </view>
+           <view class="order_title">
+             <view class="order_name">{{item.title}}</view>
+             <view class="order_text"><text>{{item.text}}</text><text>{{item.distance}}</text></view>
+             <view class="order_price"><text>￥:{{item.price}}</text><text>￥:{{item.del}}<text class="text_line"></text></text></view>
+           </view>
+           <view class="order_mun">X{{item.num_b}}</view>
+         </view>
+         </navigator>
+         <view class="order_botton">
+         <navigator url="/pages/determine-order/determine-order"><text class="current">付款</text></navigator>  <navigator><text>取消订单</text></navigator> <navigator url="/pages/order-details/order-details"><text>查看详情</text> </navigator> 
+         </view>
+       </view>
+    </swiper-item> 
+    <swiper-item>  
+       <view class="order-img">
+       <!-- <image class="swiper_img" src="../../img/order-bg.jpg"></image> -->
+      </view>
+       <view class="section section_gap order_li" wx:for="{{receipt}}" wx:for-item="item">
+       <navigator url="/pages/item-details/item-details">
+         <view class="odd_num">
+           <text>单号：{{item.num}}</text>
+           <text>{{item.time}}</text>
+         </view>
+         <view class="order_item">
+           <view class="order_img">
+             <image src="{{item.url}}"></image>
+           </view>
+           <view class="order_title">
+             <view class="order_name">{{item.title}}</view>
+             <view class="order_text"><text>{{item.text}}</text><text>{{item.distance}}</text></view>
+             <view class="order_price"><text>￥:{{item.price}}</text><text>￥:{{item.del}}<text class="text_line"></text></text></view>
+           </view>
+           <view class="order_mun">X{{item.num_b}}</view>
+         </view>
+         </navigator>
+         <view class="order_botton">
+         <navigator url="/pages/shop-details/shop-details"><text class="current">再次购买</text></navigator>  <navigator><text>取消订单</text></navigator> <navigator url="/pages/order-details/order-details"><text>查看详情</text> </navigator> 
+         </view>
+       </view> 
+    </swiper-item> 
+    <swiper-item>  
+      <view class="order-img">
+       <!-- <image class="swiper_img" src="../../img/order-bg.jpg"></image> -->
+      </view>
+       <view class="section section_gap order_li" wx:for="{{order}}" wx:for-item="item">
+        <navigator url="/pages/item-details/item-details">
+         <view class="odd_num">
+           <text>单号：{{item.num}}</text>
+           <text>{{item.time}}</text>
+         </view>
+         <view class="order_item">
+           <view class="order_img">
+             <image src="{{item.url}}"></image>
+           </view>
+           <view class="order_title">
+             <view class="order_name">{{item.title}}</view>
+             <view class="order_text"><text>{{item.text}}</text><text>{{item.distance}}</text></view>
+             <view class="order_price"><text>￥:{{item.price}}</text><text>￥:{{item.del}}<text class="text_line"></text></text></view>
+           </view>
+           <view class="order_mun">X{{item.num_b}}</view>
+         </view>
+         </navigator>
+         <view class="order_botton">
+         <navigator><text>取消订单</text></navigator> <navigator url="/pages/order-details/order-details"><text>查看详情</text> </navigator> 
+         </view>
+       </view>
+    </swiper-item> 
+    <swiper-item>  
+      <view class="order-img">
+       <!-- <image class="swiper_img" src="../../img/order-bg.jpg"></image> -->
+      </view>
+       <view class="section section_gap order_li" wx:for="{{receipt}}" wx:for-item="item">
+       <navigator url="/pages/item-details/item-details">
+         <view class="odd_num">
+           <text>单号：{{item.num}}</text>
+           <text>{{item.time}}</text>
+         </view>
+         <view class="order_item">
+           <view class="order_img">
+             <image src="{{item.url}}"></image>
+           </view>
+           <view class="order_title">
+             <view class="order_name">{{item.title}}</view>
+             <view class="order_text"><text>{{item.text}}</text><text>{{item.distance}}</text></view>
+             <view class="order_price"><text>￥:{{item.price}}</text><text>￥:{{item.del}}<text class="text_line"></text></text></view>
+           </view>
+           <view class="order_mun">X{{item.num_b}}</view>
+         </view>
+         </navigator>
+         <view class="order_botton">
+         <navigator url="/pages/shop-details/shop-details"><text class="current">再次购买</text></navigator>  <navigator><text>取消订单</text></navigator> <navigator url="/pages/order-details/order-details"><text>查看详情</text> </navigator> 
+         </view>
+         <view class="mode">
+          <text>配送方式：{{item.mode}}</text>,<text>单号：{{item.numbers}}</text>
+         </view>
+         <view class="section section_gap notice" wx:for="{{notice}}" wx:for-item="item">
+         <view> <i class="icon iconfont icon-broadcast icon1"></i>{{item.title}}</view>
+         <view>{{item.time}}<i class="icon iconfont icon-jiaji-copy icon2"></i></view>
+         </view>
+       </view> 
+    </swiper-item> 
+    </swiper>
+    </view>
+<!--tab  -->
+
+<!--取消订单  -->

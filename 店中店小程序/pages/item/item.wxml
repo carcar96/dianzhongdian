@@ -1,0 +1,7 @@
+<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" circles="{{circles}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: {{view.Height}}px;">
+<view class="location"><i class="icon iconfont icon-zhizhen"></i>广州市中小学教师继续教育</view>
+</map>
+<view class="store" bindtap="list">
+ <image src="../../img/md-icon.png"></image>
+</view>
+<view class="dw"><i class="icon iconfont icon-dingweiB"></i></view>

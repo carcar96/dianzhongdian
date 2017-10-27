@@ -1,0 +1,26 @@
+ <!-- evaluate -->
+<view class="evaluate">
+      <textarea placeholder="请添加您的备注内容"> </textarea>
+      <text></text>
+      </view>
+ <!-- evaluate -->
+
+ <!--service  -->
+ <view class="service">
+   <view class="service_li">
+   <navigator  url="/pages/add-invoice/add-invoice">
+     <view class="service_li_left">
+       发票
+     </view>
+     <view class="service_li_right">
+          <i class="icon iconfont icon-gengduo"></i>   
+     </view>
+     </navigator>
+   </view>
+ </view>
+  <!--service  -->
+
+
+
+  <button class="add_btn">提交</button>
+     

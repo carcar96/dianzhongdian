@@ -1,0 +1,14 @@
+<view class="info_list">
+ <view class="info_li info_li1">
+   <view class="info_li_name">头像</view>
+    <view class="info_li_r"><image src="../../img/tx.jpg"></image></view>
+ </view>
+ <view class="info_li">
+   <view class="info_li_name">昵称</view>
+    <view class="info_li_r">大头家族</view>
+ </view>
+ <view class="info_li">
+   <view class="info_li_name">会员编号</view>
+    <view class="info_li_r">1019</view>
+ </view>
+</view>

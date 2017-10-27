@@ -1,0 +1,27 @@
+page{
+  background: #eeeeee;
+}
+.text{
+  margin-top: 20rpx;
+  width: 100%;
+  float: left;
+  background: #ffffff;
+}
+.text input{
+  width: 94%;
+float: left;
+padding: 0 3%;
+background: #ffffff;
+line-height: 100rpx;
+height: 100rpx;
+}
+button{
+  width: 94%;
+  float: left;
+  padding: 0 3%;
+  background: #22c3fd;
+  color: #ffffff;
+  margin-left: 3%;
+  border:none;
+  margin-top: 30rpx;
+}

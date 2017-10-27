@@ -1,0 +1,4 @@
+<view class="text">
+ <input  type="text"  placeholder="请输入车牌信息"/>
+</view>
+<button>确定</button>

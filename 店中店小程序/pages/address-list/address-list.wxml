@@ -1,0 +1,17 @@
+<view class="section section_gap address_li" wx:for="{{address}}" wx:for-item="item">
+<view class="address_icon">
+  <i class="icon iconfont icon-dingwei1"></i>
+</view>
+<view class="address_info">
+<view class="address_title">{{item.title}}</view>
+<view class="address_text"><text>{{item.name}}</text><text>{{item.pho}}</text></view>
+</view>
+<view class="address_r_icon">
+<navigator  url="/pages/add-address/add-address">
+ <i class="icon iconfont icon-icon"></i>
+   </navigator>
+</view>
+</view>
+<navigator  url="/pages/add-address/add-address">
+<button class="add_btn">新增地址</button>
+</navigator>

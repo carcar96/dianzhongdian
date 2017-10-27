@@ -1,0 +1,94 @@
+<!--info  -->
+<view class="item">
+ <image src="../../img/item3.jpg"></image>
+</view>
+<view class="item_padding">
+  <view class="item_title">
+    恒都汽车零件
+  </view>
+  <view class="item_price">
+    ￥25.00
+  </view>
+  <view class="item_introduce">
+    零件介绍零件介绍零件介绍零件介绍零件介绍零件介绍零件介绍零件介绍零件介绍零件介绍零件介绍零件介绍零件介绍零件介绍零件介绍
+  </view>
+  <view class="item_surplus">
+    <view>剩余：199</view>
+    <view>销量：1999</view>
+  </view>
+  <view class="sepc"  bindtap="powerDrawer" data-statu="open">
+  <text>规格</text>
+  <view><i class="icon iconfont icon-gengduo"></i></view>
+  </view>
+</view>
+<!--info  -->
+
+<!--规格模态  -->
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view> 
+<!--content-->
+<!--使用animation属性指定需要执行的动画-->
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}"> 
+  
+ <!--drawer content-->
+ <view class="drawer_title">请选择规格</view> 
+ <view class="drawer_content"> 
+ <view class="section section_gap drawer_li" wx:for="{{drawer}}" wx:for-item="item">
+   <view> {{item.title}}</view>
+ </view>
+ </view> 
+ <view class="btn_ok" bindtap="powerDrawer" data-statu="close">确定</view> 
+</view>
+<!--规格模态  -->
+
+<!--tab  -->
+<view class="tab_box">
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">商品详情</view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">评价</view>   
+</view> 
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
+    <swiper-item>
+    <image class="swiper_img" src="../../img/item4.jpg"></image>
+    </swiper-item> 
+    <swiper-item>  
+      <view>
+        <view class="evaluate_list">
+          <view class="section section_gap evaluate_li" wx:for="{{evaluate}}" wx:for-item="item">
+            <view class="evalute_img">
+              <image src="{{item.url}}"></image>
+            </view>
+            <view class="evalute_name">
+             <view class="name1">{{item.name}}</view>
+             <view class="time">{{item.time}}</view>
+            </view>
+            <view class="evalute_icon">
+             <view><i class="icon iconfont icon-shoucang icon_active"></i></view>
+             <view><i class="icon iconfont icon-shoucang icon_active"></i></view>
+             <view><i class="icon iconfont icon-shoucang icon_active"></i></view>
+             <view><i class="icon iconfont icon-shoucang"></i></view>
+             <view><i class="icon iconfont icon-shoucang"></i></view>
+            </view>
+            <view class="info_text">
+            {{item.text}}
+            </view>
+          </view>
+        </view>
+      </view>  
+    </swiper-item> 
+    </swiper>
+    </view>
+<!--tab  -->
+
+<!--footer  -->
+    <view class="footer">
+     <view class="footer_l">
+       合计:<text>25.00元</text>
+     </view>
+     <view class="footer_r">
+      <navigator url="/pages/determine-order/determine-order" class="cart-tab-item-btn" hover-class="navigator-hover">
+       提交订单
+       </navigator>
+     </view>
+    </view>
+    <!--footer  -->

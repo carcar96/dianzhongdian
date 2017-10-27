@@ -1,0 +1,37 @@
+.add_list{
+  width: 94%;
+  float: left;
+  padding: 0 3%;
+  background: #ffffff;
+}
+page{
+  background: #eeeeee
+}
+.add_li{
+  width: 100%;
+  float: left;
+  padding: 30rpx 0;
+  border-bottom: 2.34rpx solid #eeeeee;
+}
+.add_li_name{
+  width: 25%;
+  float: left;
+  border-right: 4.68rpx solid #0098e8;
+  box-sizing: border-box;
+}
+.add_li_input{
+  width: 73%;
+  margin-left: 2%;
+  float: left
+}
+.add_btn{
+  width: 94%;
+  float: left;
+  margin-left: 3%;
+  background: #21bffd;
+  color: #ffffff;
+  border:none;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-top:200rpx;
+}

@@ -1,0 +1,29 @@
+.help_list{
+  width: 94%;
+  float: left;
+  padding: 0 3%;
+  background: #ffffff;
+}
+page{
+  background: #eeeeee;
+}
+.help_li{
+  width: 100%;
+  float: left;
+  line-height: 100rpx;
+  font-size: 35rpx;
+  border-bottom: 2.34rpx solid #eeeeee;
+}
+.help_li i{
+  float: right
+}
+.help_li text{
+  width: 10rpx;
+  height: 10rpx;
+  line-height: 10rpx;
+  margin-bottom: 11.7rpx;
+  margin-right: 10rpx;
+  background: #ed3b4c;
+  display: inline-block;
+  border-radius: 50%;
+}

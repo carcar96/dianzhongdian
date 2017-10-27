@@ -1,0 +1,8 @@
+<view class="help_list">
+<view class="section section_gap help_li" wx:for="{{help}}" wx:for-item="item">
+ <navigator url="/pages/help-details/help-details" hover-class="navigator-hover"> 
+<text></text> {{item.title}}
+ <i class="icon iconfont icon-gengduo"></i> 
+ </navigator>
+</view>
+</view>

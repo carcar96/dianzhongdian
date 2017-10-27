@@ -1,0 +1,84 @@
+<!--order  -->
+<view class="order_top_bg">
+ <image src="../../img/order-bg.png"></image>
+</view>
+<view class="order_list">
+   <view class="section section_gap order_li" wx:for="{{order_list}}" wx:for-item="item">
+    <navigator url="/pages/item-details/item-details" hover-class="navigator-hover"> 
+    <view class="order_img">
+     <image src="{{item.url}}"></image>
+    </view>
+    <view class="order_name">
+     <view class="name">{{item.name}}</view>
+     <view class="price">￥{{item.price}}</view>
+    </view>
+    <view class="order_num">
+     <view>{{item.num}}</view>
+    </view>
+    </navigator>
+   </view>
+</view>
+<!--order  -->
+
+<!--info  -->
+<view class="info_list">
+ <view class="info_li">
+  <view class="info_li_name">配送方式</view>
+  <view class="info_li_more">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">  
+    <view class="picker">  
+      {{array[index]}}  <i class="icon iconfont icon-gengduo"></i>
+    </view>  
+  </picker> 
+  </view>
+ </view>
+ <view class="info_li">
+  <view class="info_li_name">快递费</view>
+  <view class="info_li_more">￥0</view>
+ </view>
+ <view class="info_li">
+ <navigator url="/pages/coupon/coupon" hover-class="navigator-hover"> 
+  <view class="info_li_name">优惠券</view>
+  <view class="info_li_more">暂无可用<i class="icon iconfont icon-gengduo"></i></view>
+  </navigator>
+ </view>
+ <view class="info_li">
+  <view class="info_li_name">会员积分</view>
+  <view class="info_li_more">暂无可用<i class="icon iconfont icon-gengduo"></i></view>
+ </view>
+ <view class="info_li">
+  <view class="info_li_name">支付方式</view>
+  <view class="info_li_more">在线支付<i class="icon iconfont icon-gengduo"></i></view>
+ </view>
+ <view class="info_li">
+  <navigator url="/pages/add-remarks/add-remarks" hover-class="navigator-hover">
+  <view class="info_li_name">备注/发票</view>
+  <view class="info_li_more">到店消费<i class="icon iconfont icon-gengduo"></i></view>
+  </navigator>
+ </view>
+  <view class="info_li">
+  <navigator url="/pages/address-list/address-list" hover-class="navigator-hover"> 
+  <view class="info_li_name">添加地址</view>
+  <view class="info_li_more">广州市新河10014<i class="icon iconfont icon-gengduo"></i></view>
+  </navigator>
+ </view>
+   <view class="info_li">
+  <navigator url="/pages/text/text" hover-class="navigator-hover"> 
+  <view class="info_li_name">填写车牌信息</view>
+  <view class="info_li_more">10014<i class="icon iconfont icon-gengduo"></i></view>
+  </navigator>
+ </view>
+</view>
+<!--info  -->
+
+
+<!--footer  -->
+    <view class="footer">
+     <view class="footer_l">
+       合计:<text>100.00元</text>
+     </view>
+     <view class="footer_r">
+       提交订单
+     </view>
+    </view>
+    <!--footer  -->

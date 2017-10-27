@@ -1,0 +1,78 @@
+page{
+  background: #eeeeee;
+}
+.coupon_bg{
+  width: 400rpx;
+  height: 500rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -200rpx;
+  top: 50%;
+  margin-top: -150rpx;
+}
+.coupon_bg image{
+  width: 400rpx;
+  height: 500rpx;
+}
+.coupon{
+  width: 94%;
+  padding: 0 3%;
+  float: left;
+  
+}
+.item_li{
+background: #ffffff;
+width: 100%;
+ margin-top: 30rpx;
+ float: left;
+ height: 356.8rpx;
+ position: relative;
+ border:2.34rpx solid #eeeeee;
+ overflow: hidden;
+ border-radius: 23.4rpx;
+}
+.coupon_left{
+  width: 40%;
+  float: left;
+  padding: 23.4rpx 0;
+   height: 300rpx;
+  border-right: 8rpx dotted #eeeeee;
+  box-sizing: border-box
+}
+.coupon_left view {
+  width: 100%;
+  float: left;
+  color: #999999;
+  font-size: 45rpx;
+  text-align: center
+}
+.coupon_left view text{
+  font-size: 100rpx;
+  color: red
+}
+.title{
+    font-size: 45rpx;
+}
+.num{
+  font-size: 33rpx;
+}
+.coupon_info{
+  width: 56%;
+  margin-left: 4%;
+  float: right;
+  line-height: 55rpx;
+  color: #999999;
+  padding: 40rpx 0;
+}
+.time{
+  width: 94%;
+  float: left;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #999999;
+  font-size: 35rpx;
+  padding: 3%;
+  background: #eaf8ff;
+  line-height: 60rpx;
+}

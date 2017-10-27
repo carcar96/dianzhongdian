@@ -1,0 +1,16 @@
+<view class="add_list">
+  <view class="add_li">
+   <view class="add_li_name">收货人：</view>
+   <view class="add_li_input"><input type="text" placeholder="请输入内容"/></view>
+  </view>
+  <view class="add_li">
+   <view class="add_li_name">手机号码：</view>
+   <view class="add_li_input"><input type="text" placeholder="请输入内容"/></view>
+  </view>
+  <view class="add_li">
+   <view class="add_li_name">详细地址：</view>
+   <view class="add_li_input"><input type="text" placeholder="请输入内容"/></view>
+  </view>
+</view>
+
+<button class="add_btn">确定</button>

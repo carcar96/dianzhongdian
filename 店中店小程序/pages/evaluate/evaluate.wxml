@@ -1,0 +1,58 @@
+ <!-- evaluate -->
+<view class="evaluate">
+      <textarea placeholder="请输入评论" maxlength="200"> </textarea>
+      <text></text>
+      <view class="photo">
+      <view bindtap="chooseimage">
+        <i class="icon iconfont icon-zhaopian"></i>
+      </view>
+             <image src="{{tempFilePaths }}" mode="aspecFill" /> 
+      </view>
+      </view>
+ <!-- evaluate -->
+
+ <!--service  -->
+ <view class="service">
+   <view class="service_li">
+     <view class="service_li_left">
+       商品质量
+     </view>
+     <view class="service_li_right">
+              <view><i class="icon iconfont icon-shoucang icon_active"></i></view>
+             <view><i class="icon iconfont icon-shoucang icon_active"></i></view>
+             <view><i class="icon iconfont icon-shoucang icon_active"></i></view>
+             <view><i class="icon iconfont icon-shoucang"></i></view>
+             <view><i class="icon iconfont icon-shoucang"></i></view>
+     </view>
+   </view>
+   <view class="service_li">
+     <view class="service_li_left">
+       配送速度
+     </view>
+     <view class="service_li_right">
+              <view><i class="icon iconfont icon-shoucang icon_active"></i></view>
+             <view><i class="icon iconfont icon-shoucang icon_active"></i></view>
+             <view><i class="icon iconfont icon-shoucang icon_active"></i></view>
+             <view><i class="icon iconfont icon-shoucang"></i></view>
+             <view><i class="icon iconfont icon-shoucang"></i></view>
+     </view>
+   </view>
+   <view class="service_li">
+     <view class="service_li_left">
+       服务状态
+     </view>
+     <view class="service_li_right">
+              <view><i class="icon iconfont icon-shoucang icon_active"></i></view>
+             <view><i class="icon iconfont icon-shoucang icon_active"></i></view>
+             <view><i class="icon iconfont icon-shoucang icon_active"></i></view>
+             <view><i class="icon iconfont icon-shoucang"></i></view>
+             <view><i class="icon iconfont icon-shoucang"></i></view>
+     </view>
+   </view>
+ </view>
+  <!--service  -->
+
+
+
+  <button class="add_btn">评价</button>
+     

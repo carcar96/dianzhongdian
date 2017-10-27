@@ -1,0 +1,179 @@
+<!--top  -->
+<view class="top">
+<view class="top_img">
+<image src="../../img/item2.jpg"></image>
+</view>
+<view class="top_info">
+<text class="fee">配送：￥0/起送：￥0</text>
+<i class="icon iconfont icon-shoucang icon-r"></i>
+ <navigator url="/pages/notice/notice" hover-class="navigator-hover">
+<view> 公告：暂无公告<i class="icon iconfont icon-gengduo"></i></view>
+ </navigator>
+</view>
+<view class="top_botton">
+ <text class="top_index">首</text>新客立减10元
+</view>
+</view>
+<!--top  -->
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">商品</view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">点评</view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">商家详情</view>     
+</view>  
+  
+
+    <view class="cart-tab-wrp">
+      <view class="cart-item-total cart-tab-item">
+        <view class="cart-item-icon-wrp">
+            <image  class="cart-item-icon" src="../../img/orderBox.png" />
+            <text bindtap="onChangeShowState" hidden="{{total.count}}" class="cart-item-total-num bc_red">{{total.count}}</text>
+        </view>
+        <text class="cart-item-total-price">费用合计：<text style="color:#fc3c3d">{{total.money}}元</text></text>
+      </view>
+      <view class="cart-tab-item">
+        <navigator url="/pages/determine-order/determine-order" class="cart-tab-item-btn" hover-class="navigator-hover">提交订单</navigator>
+      </view>
+    </view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
+    <swiper-item>  
+      <view>
+      <view class="index">
+    <view class="menu-wrp">
+        <scroll-view scroll-y="true" class="left-side">
+            <!--菜单列表-->
+            <block wx:for="{{menus}}"  wx:key="id" wx:for-item="menu">
+                <view class="menu-item" data-id="{{menu.id}}" data-tag="{{menu.tag}}" bindtap="selectMenu">
+                    <view class="menu-item-wrp">
+                        <view>
+                            <text class="m-item-title {{selectedMenuId == menu.id ? 'bc_red' : 'bc_gray'}} m-item-icon">{{menu.name}}</text>
+                        </view>
+                    </view>
+                </view>
+            </block>
+            <view class="menu-footer"></view>
+        </scroll-view>
+        <scroll-view scroll-y="true" scroll-into-view="{{toView}}" class="right-side">
+            <view class="dish-header"></view>
+            <block wx:for="{{menus}}"  wx:key="id" wx:for-item="menu">
+                <view>
+                    <view id="{{menu.tag}}" class="dish-category-title">{{menu.name}}</view>
+                    <block wx:for="{{menu.dishs}}"  wx:key="id" wx:for-item="dish">
+                        <view class="dish-item">
+                        
+                            <view class="dish-item-wrp">
+                              <navigator url="/pages/item-details/item-details" hover-class="navigator-hover">
+                                <view class="dish-item-pic">
+                                    <image class="image" src="resources/pic/{{dish.pic}}" />
+                                </view>
+                                <view class="dish-item-info" style="">
+                                    <view>
+                                        <text class="dish-item-name">{{dish.name}}</text>
+                                    </view>
+                                    <view>
+                                    </view>
+                                    <view>
+                                        <text class="dish-item-money">¥{{dish.price}}</text>
+                                        
+                                    </view>
+                                </view>
+                                  </navigator>
+                                <view class="dish-item-count" style="">
+                                    <view class="dish-item-tab">
+                                        <view hidden="{{dish.count == 0}}" class="dish-item-count-minus" data-id="{{dish.id}}"
+                                        data-cid="{{menu.id}}" bindtap="minusCount">
+                                            <image class="image" src="resources/pic/countMinus.png" />
+                                        </view>
+                                    </view>
+                                    <view class="dish-item-count-text dish-item-tab">
+                                        <text hidden="{{dish.count == 0}}">{{dish.count}}</text>
+                                    </view>
+                                    <view class="dish-item-count-plus" data-id="{{dish.id}}" 
+                                    data-cid="{{menu.id}}" bindtap="addCount">
+                                        <image class="image" src="resources/pic/countSelAdd.png" />
+                                    </view>
+                                </view>
+                            </view>
+                        </view>                   
+                    </block>
+
+                </view>
+            </block>        
+            <view class="dish-footer"></view>
+        </scroll-view>
+    </view>
+</view>
+      </view>  
+    </swiper-item>   
+    <swiper-item>  
+      <view>
+        <view class="evaluate_list">
+          <view class="section section_gap evaluate_li" wx:for="{{evaluate}}" wx:for-item="item">
+            <view class="evalute_img">
+              <image src="{{item.url}}"></image>
+            </view>
+            <view class="evalute_name">
+             <view class="name1">{{item.name}}</view>
+             <view class="time">{{item.time}}</view>
+            </view>
+            <view class="evalute_icon">
+             <view><i class="icon iconfont icon-shoucang icon_active"></i></view>
+             <view><i class="icon iconfont icon-shoucang icon_active"></i></view>
+             <view><i class="icon iconfont icon-shoucang icon_active"></i></view>
+             <view><i class="icon iconfont icon-shoucang"></i></view>
+             <view><i class="icon iconfont icon-shoucang"></i></view>
+            </view>
+            <view class="info_text">
+            {{item.text}}
+            </view>
+          </view>
+        </view>
+      </view>   
+    </swiper-item>
+    <swiper-item>
+    <view class="business">
+      <image src="../../img/item2.jpg"></image>
+      <view class="business_li">
+         <view class="li_nanme li_nanme1">店铺名字</view>
+         <view class="li_name_info"></view>
+      </view>
+      <view class="business_li">
+         <view class="li_nanme">营业范围：</view>
+         <view class="li_name_info">饿呢呢</view>
+      </view>
+      <view class="business_li">
+         <view class="li_nanme">营业时间：</view>
+         <view class="li_name_info">18：00-23：000</view>
+      </view>
+      <view class="business_li">
+         <view class="li_nanme">联系方式:</view>
+         <view class="li_name_info">1234456666</view>
+      </view>
+      <view class="business_li">
+         <view class="li_nanme">联系地址:</view>
+         <view class="li_name_info">饿呢恩呢</view>
+      </view>
+    </view>
+    </swiper-item>
+</swiper>  
+
+
+<!--购物车  -->
+<view class="{{showView?'show':'hide'}}">  
+  <view canvas-id="pieCanvas1">
+<view class="cart3">
+  <view class="cart3_li" wx:for="{{crat_list}}" wx:for-item="item">
+     <view class="cart3_img">
+        <image src="{{item.url}}"></image>
+     </view>
+     <view class="cart3_info">
+       <view>{{item.title}}</view>
+       <view>￥{{item.pice}}</view>
+     </view>
+     <view class="cart3_btn">
+        <text>-</text><text class="cart3_box">1</text><text>+</text>
+     </view>
+       </view>
+</view>
+  </view>
+</view>
+

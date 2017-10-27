@@ -1,0 +1,17 @@
+page{
+  background: #eeeeee;
+}
+.help_title{
+  line-height: 140rpx;
+  width: 94%;
+  padding: 0 3%;
+  color: #0098e8;
+  font-size: 35rpx;
+}
+.help_info{
+  width: 88%;
+  padding: 3%;
+  background: #fff;
+  margin: 0 3%;
+  line-height: 45rpx;
+}

@@ -1,0 +1,203 @@
+
+.swiper-tab{  
+    width: 100%;  
+    border-bottom: 2rpx solid #eeeeee;  
+    text-align: center;  
+    line-height: 100rpx;
+    background: #ffffff;
+    }  
+.swiper-tab-list{ 
+   font-size: 35rpx;  
+    display: inline-block;  
+    width: 20%;  
+    color: #333333;  
+}  
+.on{ color: #0093dc;  
+    border-bottom: 5rpx solid #0093dc;
+    }  
+  page{
+    background: #eeeeee;
+  }
+.swiper-box{ 
+  display: block; 
+   width: 100%; 
+   float: left;
+   overflow: hidden; 
+   }    
+.top_index{
+  padding:5rpx 11.7rpx;
+  display: inline-block;
+  background: #ff6456;
+  color: #ffffff;
+  margin-right: 11.7rpx;
+  border-radius: 8rpx; 
+}
+.tab_box{
+  width: 100%;
+  float: left;
+}
+swiper-item{
+  float: left;
+  width: 94%;
+ 
+}
+.order-img{
+  width: 400rpx;
+  height: 500rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -250rpx;
+  left: 50%;
+  margin-left: -200rpx;
+  z-index: -1
+}
+.order-img image{
+  width: 400rpx;
+  height: 400rpx;
+}
+.swiper_img{
+  width: 94%;
+  height: 100%;
+}
+.odd_num{
+  width: 100%;
+  float: left;
+  line-height:80rpx;
+  border-bottom: 2.34rpx solid #eeeeee;
+}
+.odd_num text:nth-child(1){
+  float: left;
+}
+.odd_num text:nth-child(2){
+  float: right;
+  color: #999999;
+}
+.order_li{
+  background: #ffffff;
+  width: 94%;
+  padding:0 3%;
+  float: left;
+  margin-bottom: 15rpx;
+}
+.order_item{
+  width: 100%;
+  float: left;
+  padding: 3% 0;
+}
+.order_img{
+  width: 30%;
+  float: left;
+  margin-right: 2%;
+}
+.order_img image{
+  width: 100%;
+  float: left;
+  height: 180rpx;
+}
+.order_title{
+  width: 58%;
+  float: left;
+}
+.order_name{
+  font-size: 35rpx;
+  color: #333333;
+}
+.order_text{
+  color: #999999;
+  width: 100%;
+  float: left;
+  margin-top: 23.4rpx;
+}
+.order_botton navigator{
+  float: right
+}
+.order_text text:nth-child(1){
+  float: left
+}
+.order_text text:nth-child(2){
+  margin-left: 23.4rpx;
+}
+.order_price{
+  width: 100%;
+  float: left;
+  line-height: 80rpx;
+}
+.order_price text:nth-child(1){
+  color: red;
+  font-size: 35rpx;
+}
+.order_price text:nth-child(2){
+  color: #999999;
+  margin-left: 23.4rpx;
+  position: relative;
+}
+.text_line{
+  width: 140rpx;
+  background: #999999;
+  height: 2.34rpx;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1.17rpx;
+  display: inline-block
+}
+.order_mun{
+  margin-top: 125rpx;
+  width: 10%;
+  float: right;
+  color: red;
+  text-align: right;
+
+}
+.order_botton{
+  width: 100%;
+  float: left;
+  text-align: right;
+  line-height: 100rpx;
+  border-top: 2.34rpx solid #eeeeee;
+}
+.order_botton text{
+  border:2.34rpx solid #0093dc;
+  width: 140rpx;
+  height: 60rpx;
+  margin-left: 11.7rpx;
+  text-align: center;
+  line-height: 60rpx;
+  display: inline-block;
+  color:  #0093dc;
+}
+.order_botton text.current{
+  background: #0093dc;
+  color: #ffffff;
+}
+.mode{
+  width: 100%;
+  float: left;
+  color: #333333;
+  line-height: 100rpx;
+  border-top:2.34rpx solid #eeeeee;
+  border-bottom:2.34rpx dotted #eeeeee;
+}
+.mode text:nth-child(2){
+  margin-left: 11.7rpx;
+}
+.notice{
+  width: 100%;
+  float: left;
+  padding: 11.7rpx 0;
+  border-bottom:2.34rpx dotted #9fd9f7
+}
+.notice view{
+  line-height: 50rpx;
+  color: #999999
+}
+.icon1{
+  color: #14aaf8;
+  font-size: 40rpx!important;
+  margin-right: 11.7rpx;
+}
+.icon2{
+  color: #f76363!important;
+  font-size:60rpx!important;
+  float: right
+}

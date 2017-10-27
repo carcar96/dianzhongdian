@@ -1,0 +1,81 @@
+<!--order_top  -->
+<view class="order_top">
+ <view class="order_top_left">
+  <view class="order-_top_title">待收货</view>
+  <view class="order-_top_title1">等待买家收货</view>
+ </view>
+ <view class="order_top_right">
+ <button>确定收货</button>
+ </view>
+</view>
+
+<!--order_top  -->
+
+
+<!-- order_info -->
+<view class="order_info">
+ <view class="order_li">
+  <view class="order_li_name">
+   订单号：
+  </view>
+  <view class="order_li_num">
+  1234567891011
+  </view>
+ </view>
+  <view class="order_li">
+  <view class="order_li_name">
+   下单时间：
+  </view>
+  <view class="order_li_num">
+  2016.4.26
+  </view>
+ </view>
+  <view class="order_li">
+  <view class="order_li_name">
+   支付状态：
+  </view>
+  <view class="order_li_num">
+  已支付
+  </view>
+ </view>
+</view>
+
+<!-- order_info -->
+
+<!--contact  -->
+<view class="contact">
+ <view class="contact_name"><i class="icon iconfont icon-dianjia"></i>店名</view>
+ <view class="contact_sj" bindtap="calling">联系商家<i class="icon iconfont icon-dianhua"></i></view>
+</view>
+<!--contact  -->
+
+<!--item  -->
+<view class="item">
+ <view class="item_img">
+ <image src="../../img/item.jpg"></image>
+ </view>
+ <view class="item_name">
+  <view class="item_title">商品标题</view>
+  <view class="item_type">
+   <text>琥珀色</text> <text>56cm</text>
+  </view>
+  <view class="item_price">
+   <text>￥：99.00</text> <text class="price">￥138.00<text></text></text>
+  </view>
+ </view>
+ <view class="item_num">
+ <text>X1</text>
+ </view>
+</view>
+<!--item  -->
+
+<!--write  -->
+<view class="write">
+  核销码：1818188
+</view>
+
+<view class="write_m">
+ <text>核销二维码：</text>
+ <image src="../../img/ewm.jpg"></image>
+</view>
+<!--write  -->

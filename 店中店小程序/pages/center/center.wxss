@@ -1,0 +1,136 @@
+.center_bg{
+  width: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+  height: 480rpx;
+}
+.center_img{
+  width: 100%;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.center_img image{
+  width: 100%;
+  height: 480rpx;
+}
+.cetenr_img_b{
+  width: 280rpx;
+  height: 280rpx;
+   border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 65rpx;
+  text-align: center;
+  margin-left: -140rpx;
+}
+.cetenr_img2{
+  width: 280rpx;
+  height: 280rpx;
+}
+pgge{
+  background: #eeeeee
+}
+.cetenr_img1{
+  width: 140rpx;
+  position: absolute;
+  height: 140rpx;
+  left: 50%;
+  top: 50%;
+  margin-top: -80rpx;
+  margin-left: -80rpx;
+  border-radius: 50%;
+  opacity: 1!important;
+  border: 11.7rpx solid #ffffff;
+}
+.name{
+  color: #ffffff;
+  font-size: 35rpx;
+  margin:11.7rpx 0;
+}
+.integral{
+  width: 100%;
+  line-height: 80rpx;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #ffffff;
+}
+.integral view{
+  float: left;
+  width: 33.333333333%;
+  text-align: center;
+  font-size: 27rpx;
+}
+.integral view text{
+  margin-left: 11.7rpx;
+}
+.integral i{
+  color: #ffe400;
+  margin-right: 8rpx;
+}
+.center_list{
+  width: 94%;
+  padding: 0 3%;
+  float: left;
+  margin-top: 20rpx;
+  background: #ffffff;
+}
+.center_li{
+  width: 100%;
+  float: left;
+  line-height: 130rpx;
+  border-bottom: 2.34rpx solid #eeeeee;
+}
+.center_li_name i{
+  font-size:75rpx;
+  float: left;
+  color: #fd4f42;
+
+  margin-right: 11.7rpx;
+}
+page{
+  background: #eeeeee;
+}
+.center_li_name{
+  width: 95%;
+    position: relative;
+  font-size: 33rpx;
+  color: #666666;
+  float: left;
+}
+.center_li_more{
+  width: 5%;
+  float: left;
+  text-align: right;
+}
+.icon_f{
+  font-size:56rpx!important;
+  margin-left: 11.7rpx;
+}
+.customer{
+  padding-top: 50rpx;
+  position: relative;
+  line-height: 50rpx;
+  width: 400rpx;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 50%
+}
+.customer i{
+  font-size: 50rpx;
+  color: #fd4f42
+}
+.customer_box{
+  width: 100%;
+  float: left
+}
+.contact{
+ position: absolute;
+ left:45%;
+ z-index: 99;
+ top: 40rpx;
+ opacity: 0;
+}

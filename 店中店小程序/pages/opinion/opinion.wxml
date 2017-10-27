@@ -1,0 +1,8 @@
+ <!-- evaluate -->
+<view class="evaluate">
+      <textarea placeholder="请输入您的宝贵意见,您的意见将有助于我们提升服务，非常感谢"> </textarea>
+      <text></text>
+      </view>
+ <!-- evaluate -->
+  <button class="add_btn">提交反馈</button>
+     

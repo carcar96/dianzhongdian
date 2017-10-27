@@ -1,0 +1,16 @@
+page{
+  background: #eeeeee;
+}
+.notice{
+  width: 94%;
+  padding: 0 3% 3% 3%;
+ background: #ffffff;
+}
+.notive_title{
+  line-height:100rpx;
+  text-align: center;
+  font-size: 35rpx;
+}
+.notice text{
+  line-height: 45rpx;
+}

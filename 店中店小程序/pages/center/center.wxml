@@ -1,0 +1,86 @@
+<!--center_bg  -->
+<view class="center_bg">
+   <view class="center_img">
+     <image src="../../img/bg.jpg"></image>
+   </view>
+   <view class="cetenr_img_b">
+    <image class="cetenr_img2" src="../../img/bg1.png"></image>
+    <navigator url="/pages/info/info" hover-class="navigator-hover">
+    <image class="cetenr_img1" src="{{userInfoAvatar}}"></image>
+    </navigator>
+    <view class="name">{{nickName}}</view>
+   </view>
+   <view class="integral">
+     <view><i class="icon iconfont icon-jifen1"></i>我的积分<text>1000</text></view>
+     <view>会员编号<text>XXXXX</text></view>
+     <view>车牌信息<text>XXXXX</text></view>
+   </view>
+</view>
+<!--center_bg  -->
+
+<!--center_list  -->
+<view class="center_list">
+   <view class="center_li">
+   <navigator url="/pages/coupon/coupon" hover-class="navigator-hover"> 
+      <view class="center_li_name">
+        <i class="icon iconfont icon-youhuijuan"></i>优惠券
+      </view>
+      <view class="center_li_more">
+        <i class="icon iconfont icon-gengduo"></i> 
+      </view>
+      </navigator>
+   </view>
+   <view class="center_li">
+    <navigator url="/pages/collection/collection" hover-class="navigator-hover"> 
+      <view class="center_li_name">
+        <i class="icon iconfont icon-shoucang"></i>我的收藏
+      </view>
+      <view class="center_li_more">
+        <i class="icon iconfont icon-gengduo"></i> 
+      </view>
+      </navigator>
+   </view>
+   <view class="center_li">
+   <navigator  url="/pages/opinion/opinion">
+      <view class="center_li_name">
+       <i class="icon iconfont icon-weibiaoti-- icon_f"></i>意见反馈
+      </view>
+      <view class="center_li_more">
+        <i class="icon iconfont icon-gengduo "></i> 
+      </view>
+      </navigator>
+   </view>
+   <view class="center_li">
+    <navigator url="/pages/help/help" hover-class="navigator-hover"> 
+      <view class="center_li_name">
+       <i class="icon iconfont icon-bangzhuzhongxin icon_f"></i>帮助中心
+      </view>
+      <view class="center_li_more">
+        <i class="icon iconfont icon-gengduo"></i> 
+      </view>
+     </navigator>
+   </view>
+   <view class="center_li">
+   <navigator url="/pages/about-us/about-us" hover-class="navigator-hover"> 
+      <view class="center_li_name">
+        <i class="icon iconfont icon-bangzhu icon_f"></i>联系我们
+      </view>
+      <view class="center_li_more">
+        <i class="icon iconfont icon-gengduo"></i> 
+      </view>
+      </navigator>
+   </view>
+</view>
+<!--center_list  -->   
+
+
+
+<!--客服  -->
+<view class="customer_box">
+<view class="customer">
+ <contact-button class="contact"   size="36000000000000000000000000000000"></contact-button> 
+ <i class="icon iconfont icon-kefu icon_f"></i>
+ <view>在线客服</view>
+  </view>
+</view>
+<!--客服  -->

@@ -1,0 +1,6 @@
+<view class="section section_gap help_li" wx:for="{{help}}" wx:for-item="item">
+ <view class="help_title">{{item.title}}</view>
+<view class="help_info">
+  {{item.text}}
+</view>
+</view>

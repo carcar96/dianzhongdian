@@ -1,0 +1,161 @@
+.order_top{
+  width: 94%;
+  float: left;
+  padding: 3%;
+  border-bottom: 2.34rpx solid #eeeeee;
+}
+.order_top_left{
+  width: 60%;
+  float: left
+}
+.order_top_right{
+  width: 40%;
+  float: left
+}
+.order-_top_title{
+  font-size: 35rpx;
+  color: #21bffd;
+  line-height: 70rpx;
+}
+.order-_top_title1{
+  color: #999999;
+}
+.order_top_right button{
+  background: #21c0fd;
+  color: #ffffff;
+  width: 80%;
+  float: right
+}
+.order_info{
+  width: 94%;
+  float: left;
+  padding: 3%  3% 0 3%;
+  border-bottom: 2.34rpx solid #eeeeee;
+}
+.order_li{
+  width: 100%;
+  float: left;
+  padding-bottom: 3%
+}
+.price{
+  position: relative
+}
+.price text{
+  position: absolute;
+  width: 125rpx;
+  height: 2.34rpx;
+  background: #999999;
+  left: 5rpx;
+  display: inline-block;
+  top: 50%;
+}
+.order_li_name{
+  width: 24%;
+  float: left
+}
+.order_li_num{
+  width: 76%;
+  float: left
+}
+.contact{
+  width: 94%;
+  float: left;
+  line-height: 100rpx;
+  padding: 0 3%;
+  border-bottom: 2.34rpx solid #eeeeee;
+}
+.contact_name{
+  width: 40%;
+  float: left
+}
+.contact_sj{
+  width: 60%;
+  float: right;
+  text-align: right
+}
+.item{
+  width: 94%;
+  float: left;
+  position: relative;
+  padding:3%;
+   border-bottom: 2.34rpx solid #eeeeee;
+}
+.item_img{
+  width: 25%;
+  float: left;
+}
+.item_img image{
+  width: 100%;
+  height: 140rpx;
+}
+.item_name{
+  width: 66%;
+  margin: 0 2%;
+  float: left;
+}
+.item_num{
+  width: 5%;
+  float: right;
+  text-align: right
+}
+.item_title{
+  font-size: 35rpx;
+}
+.item_type{
+  color: #999999;
+  margin: 11.7rpx 0;
+}
+.item_type text:nth-child(2){
+  margin-left: 11.7rpx;
+  display: inline-block
+}
+.item_price{
+  position: absolute;
+  bottom: 13%;
+}
+.item_price text:nth-child(1){
+  color: red;
+  margin-right: 11.7rpx;
+}
+.item_price text:nth-child(2){
+  color: #999999;
+}
+.item_num text{
+  color: red;
+  position: absolute;
+  bottom: 13%;
+  right: 3%;
+}
+.write{
+ width: 94%;
+ float: left;
+ padding: 0 3%;
+ line-height: 80rpx;
+}
+.write_m{
+  width: 94%;
+  float: left;
+  padding: 0 3%;
+  text-align: center;
+}
+.write_m text{
+  width: 100%;
+float: left;
+text-align: left;
+display: inline-block
+}
+.write_m image{
+  margin-top: 50rpx;
+  width: 400rpx;
+  height: 400rpx;
+}
+.contact_name i{
+  font-size: 60rpx;
+  color: #22c2fd;
+  margin-right: 11.7rpx;
+}
+.contact_sj i{
+  font-size: 60rpx;
+  color: #22c2fd;
+  margin-left: 11.7rpx;
+}

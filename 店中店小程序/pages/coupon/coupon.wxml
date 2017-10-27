@@ -1,0 +1,17 @@
+<view class="coupon">
+  <!-- <view class="coupon_bg"><image src="../../img/yhj-bg.jpg"></image></view> -->
+</view>
+<view class="coupon">
+<view class="section section_gap item_li" wx:for="{{coupon}}" wx:for-item="item">
+<view class="coupon_left">
+ <view>￥<text>{{item.price}}</text></view>
+ <view>{{item.name}}</view>
+</view>
+<view class="coupon_info">
+ <view class="title">{{item.title}}</view>
+ <view class="num">券号：{{item.num}}</view>
+  <view class="num">使用范围：{{item.range}}</view>
+</view>
+<view class="time">有效期：{{item.time}}</view>
+</view>
+</view>

@@ -1,0 +1,7 @@
+ <view class="search">
+ <i class="icon iconfont icon-sousuo"></i>
+  <input type="text" placeholder="请输入关键字"/>
+ </view>
+ <view class="map">
+<map class="d" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14"  controls="{{controls}}" polyline="{{polyline}}"  bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap"  bindregionchange="regionchange" show-location style="width: 100%; height: 1000px;"></map>
+</view> 
